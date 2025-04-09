@@ -1040,6 +1040,7 @@ color: #434455;
   .logo-footer,
 .section-footer-descr {
   text-align: left;
+  margin-left: 156px;
 }
 
 .social-footer-descr,
@@ -1090,6 +1091,7 @@ color: #434455;
     .subscribe-box {
       margin: 0; 
       flex-shrink: 0;
+      margin-right: 159px;
     }
       .paragraph {
         margin-right: 120px;
@@ -1112,15 +1114,271 @@ color: #434455;
         height: auto;
         margin-top: 16px;
       }
-    
       .form-input {
         width: 264px;
       }
-
     
     .form-input,
     .subscribe-btn {
       margin: 0;
     }
-    
+ }
+ /* Modal window mob */ 
+ .mobile-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 40px 16px;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);  } 
+    .mobile-backdrop.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }  
+ .modal-overlay {
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-mob.jpg');
+    background-size: cover;  /* Ensures the image covers the whole screen */
+    background-repeat: no-repeat; /* Prevents tiling */
+    text-align: center;
+    padding: 72px 0;
+    min-width: 320px;
+    margin: 0 auto;
+    background-position: center;
+      }
+.modal-window-mob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+  border-radius: 4px;
+  width: 288px;
+  min-height: 623px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 16px 24px 16px; 
+}
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-descr-mob {
+  width: 256px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+margin-bottom: 16px;
+}
+.input-group {
+margin-bottom: 8px; 
+}
+.contact-label {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+display: block;
+margin-bottom: 4px;
+}
+.input-icon {
+  position: relative;
+}
+.input-icons-footer {
+width: 100%;
+height: 40px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+background-color: transparent;
+padding-left: 38px;
+outline: transparent;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-name:focus+.name-icon {
+fill: #4d5ae5;
+}
+.input-icons-footer:focus {
+  border-color: #4d5ae5;
+}
+
+.input-group-comment {
+margin-bottom: 16px;
+}
+.name-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-icons-footer:focus+.name-icon {
+  fill: #4d5ae5;
+}
+.mobile-menu-container {
+  position: relative;
+ 
+  padding-top: 72px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.section-hero-mob {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-mob.jpg');
+  background-size: cover;  /* Ensures the image covers the whole screen */
+  background-repeat: no-repeat; /* Prevents tiling */
+  text-align: center;
+  padding: 72px 0;
+  min-width: 320px;
+  margin: 0 auto;
+  background-position: center;
+}
+.text-input {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-input:focus {
+  border-color: #4D5AE5;
+}
+.checkbox-container {
+  margin-bottom: 24px;
+}
+.label-privacy {
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+display: flex;
+align-items: center;
+}
+span {
+  display: flex;
+  margin-right: 8px; /* Adds space between checkbox and text */
+}
+.custom-checkbox {
+  display: flex;
+  flex-shrink: initial;
+  align-items: center;
+  
+}
+.privacy-color {
+width: 16px;
+height: 16px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 2px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+
+
+}
+
+.btn-last {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+gap: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #4d5ae5;
+border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+min-height: 56px;
+}
+.checkbox-input:checked+ .label-privacy .privacy-color {
+background-color: #404bbf;
+border: none;
+fill: #f4f4fd;
+}
+.privacy-link {
+color: #4d5ae5;
+}
+.btn-last {
+display: block;
+margin: 0 auto;
+min-width: 169px;
+height: 56px;
+font-family: "Roboto", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #ffffff;
+cursor: pointer;
+background-color: #4d5ae5;
+border: none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+  /*section tablet section modal window*/
+  @media screen and (min-width: 768px) {
+    .mobile-backdrop {
+      display: none;
+    } 
+  }
+   /*section desktop section modal window*/
+ @media screen and (min-width: 1158px) {
+
  }
