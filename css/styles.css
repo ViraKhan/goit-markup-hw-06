@@ -348,110 +348,110 @@ button {
       }
    
   
-    /*section hero mob*/
+   /*section hero mob*/
 
+   .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-mob-1x.jpg');
+    background-size: cover;  /* Ensures the image covers the whole screen */
+    background-repeat: no-repeat; /* Prevents tiling */
+    text-align: center;
+    padding: 72px 0;
+    min-width: 320px;
+    margin: 0 auto;
+    background-position: center;
+      }
+   
+      .hero-section-header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #ffffff;
+        max-width: 216px;
+        margin: 0 auto;
+      }
+  .hero-btn .container {
+    display: flex;
+  }
+  .hero-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    display: block;
+    margin-top: 72px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hero-btn:hover,
+  .hero-btn:focus {
+    background-color: #404BBF;
+  }
+  @media screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .section-hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-mob-1x.jpg');
-      background-size: cover;  /* Ensures the image covers the whole screen */
-      background-repeat: no-repeat; /* Prevents tiling */
-      text-align: center;
-      padding: 72px 0;
-      min-width: 320px;
-      margin: 0 auto;
-      background-position: center;
-        }
-     
-        .hero-section-header {
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 1.11;
-          letter-spacing: 0.02em;
-          text-align: center;
-          color: #ffffff;
-          max-width: 216px;
-          margin: 0 auto;
-        }
-    .hero-btn .container {
-      display: flex;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-mob@2x.jpg');
     }
-    .hero-btn {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: 0.04em;
-      color: #ffffff;
-      display: block;
-      margin-top: 72px;
-      margin-right: auto;
-      margin-left: auto;
-      min-width: 169px;
-      height: 56px;
-      border: none;
-      background-color: #4d5ae5;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+/*section hero tablet*/
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }  
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-tab-1x.jpg');
+    padding: 112px 0;
+    min-width: 768px;
+    
     }
     
-    .hero-btn:hover,
-    .hero-btn:focus {
-      background-color: #404BBF;
-    }
-    @media screen and (min-resolution: 2dppx) and (max-width: 767px) {
-      .section-hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-mob@2x.jpg');
-      }
-    }
-  
-  /*section hero tablet*/
-  @media screen and (min-width: 768px) {
-    .mobile-menu {
-      display: none;
-    }  
-    .section-hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-tab-1x.jpg');
-      padding: 112px 0;
-      min-width: 768px;
-      
-      }
-      
-      .hero-section-header {
-        font-size: 56px;
-        line-height: 1.07;
-        max-width: 496px;
-      }
-      .hero-btn {
-        margin-top: 36px;
-      }
-  }
- 
-  @media screen and (min-width: 768px) and (min-resolution: 2dppx) and (max-width: 1157px) {
-    .section-hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/bg-tab@2x.jpg');
-    }
-  }
-
- 
- /*section hero main*/
-  @media screen and (min-width: 1158px) {
-    .section-hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-desk.jpg');
-      padding: 188px 0;
-      max-width: 1440px;
-     
-      margin: 0 auto;
+    .hero-section-header {
+      font-size: 56px;
+      line-height: 1.07;
+      max-width: 496px;
     }
     .hero-btn {
-      margin-top: 48px;
+      margin-top: 36px;
     }
-  }
-  /*@media screen and (min-width: 1158px) and (min-resolution: 2dppx) {
-    .section-hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-desk@2x.jpg');
-    }
-  }*/
+}
 
-/*section advantages mob section 2*/
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) and (max-width: 1157px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/bg-tab@2x.jpg');
+  }
+}
+
+
+/*section hero main*/
+@media screen and (min-width: 1158px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-desk.jpg');
+    padding: 188px 0;
+    max-width: 1440px;
+   
+    margin: 0 auto;
+  }
+  .hero-btn {
+    margin-top: 48px;
+  }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-desk@2x.jpg');
+  }
+}
+
+ /*section advantages mob section 2*/
 
 .advantages-section {
   display: flex;
@@ -1178,7 +1178,7 @@ color: #434455;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-  .section-hero {
+  .section-hero-mob {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-mob-1x.jpg');
     background-size: cover;  /* Ensures the image covers the whole screen */
     background-repeat: no-repeat; /* Prevents tiling */
