@@ -624,27 +624,6 @@ fill: transparent;
 margin-right: 8px; /* Adds space between checkbox and text */
 
 }
-
-
-.btn-last {
-display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: row;
-gap: 10px;
-  font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-text-align: center;
-color: #fff;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background: #4d5ae5;
-border-radius: 4px;
-padding: 16px 32px;
-width: 169px;
-min-height: 56px;
-}
 .checkbox-input:checked+ .label-privacy .privacy-color {
   background-color: #404bbf;
   border: none;
@@ -654,15 +633,18 @@ min-height: 56px;
   color: #4d5ae5;
 }
 .btn-last {
-  display: block;
-  margin: 0 auto;
-  min-width: 169px;
-  height: 56px;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  gap: 10px;
+  text-align: center;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: #ffffff;
   cursor: pointer;
   background-color: #4d5ae5;
