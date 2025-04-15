@@ -477,6 +477,7 @@ button {
   
 font-weight: 700;
 font-size: 36px;
+line-height: 1.11;
 text-align: center;
 margin-bottom: 8px;
 letter-spacing: 0.02em;
@@ -507,7 +508,9 @@ color: #2e2f42;
       .advantages-list-main {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
+    
 
       }
       .advantages-list {
@@ -817,9 +820,6 @@ color: #434455;
   background-color: #2e2f42;
   padding: 96px 0;
 }
-.paragraph {
-  margin-bottom: 72px;
-}
 
 .logo-footer {
   font-family: Raleway, sans-serif;
@@ -839,9 +839,11 @@ color: #434455;
 }
 .section-footer .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 72px;
+  margin: 0 auto;
 }
 .section-footer-descr {
   font-family: "Roboto", sans-serif;
@@ -850,9 +852,6 @@ color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-}
-.social-icons-logo {
-  margin-bottom: 72px;
 }
 .social-icons-list {
   display: flex;
@@ -903,13 +902,19 @@ color: #434455;
  .subscribe-form {
     display: flex;
     flex-direction: column;   /* removes in a row*/
-  }
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+  
   .form-input {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  padding: 8px 16px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   opacity: 0.3;
   border: 1px solid #fff;
@@ -918,11 +923,6 @@ color: #434455;
   height: 40px;
   background-color: transparent;
   color: #ffffff;
-  margin-bottom: 16px;
-  display: block;
-  margin: 0 auto 16px;
-  
-
     }
     .form-input::placeholder {
       color: #ffffff;
@@ -962,15 +962,14 @@ color: #434455;
     padding: 96px 0;
   }
   .section-footer .container {
-    display: flex;
-    align-items: baseline;
+ flex-wrap: wrap;
     flex-direction: row; 
-    justify-content: start;
-    padding: 0 108px;
+    justify-content: flex-start;
+   align-items: normal;
+   gap: 72px 24px;
   }
   .paragraph  {
     margin-bottom: 0;
-    margin-right: 72px;
   }
   .social-icons-logo {
     display: flex;
@@ -990,12 +989,12 @@ color: #434455;
       margin-bottom: 0;
       flex-direction: row;
       width: 264px;
+      margin-bottom: 0;
       } 
 
   .subscribe-title {
      display: flex;
-     flex-direction: row;
-     align-items: flex-start;
+    justify-content: flex-start;
    }
    .form-input {
     width: 264px;
@@ -1004,27 +1003,18 @@ color: #434455;
       }
   .subscribe-form {
     flex-direction: row;
-    align-items: center;
-    gap: 24px;
- 
       }    
       .mail-form-btn {
         display: flex;
       }
       .subscribe-btn {
         margin: 0; }
- 
- 
   }
-     
-  
-
    /*section desktop section footer*/
  @media screen and (min-width: 1158px) {
   .section-footer {
     padding: 100px 0;
   }
-  
   .logo-footer {
   display: inline-block;
    margin: 0;
@@ -1051,9 +1041,7 @@ color: #434455;
   .logo-footer,
 .section-footer-descr {
   text-align: left;
-
 }
-
 .social-footer-descr,
 .social-icons-list {
   margin-bottom: 0;
@@ -1123,7 +1111,6 @@ color: #434455;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         width: auto;
         height: auto;
-        margin-top: 16px;
       }
       .form-input {
         width: 264px;
