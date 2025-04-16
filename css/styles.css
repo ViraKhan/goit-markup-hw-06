@@ -288,7 +288,7 @@ button {
   
     .mob-address {
       font-style: normal;
-     padding-bottom: 48px;
+     margin-bottom: 48px;
     }
 
     .contact-info-mob {
@@ -960,13 +960,14 @@ color: #434455;
 @media screen and (min-width: 768px) {
   .section-footer { 
     padding: 96px 0;
+    padding-left: 108px;
   }
   .section-footer .container {
- flex-wrap: wrap;
-    flex-direction: row; 
-    justify-content: flex-start;
-   align-items: normal;
-   gap: 72px 24px;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: flex-start;
+  align-items: normal;
+  gap: 72px 24px;
   }
   .paragraph  {
     margin-bottom: 0;
